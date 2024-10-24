@@ -1,0 +1,38 @@
+[user]
+        email = javiergonzalez@hey.com 
+        name = jcompte
+[pretty]
+  log-oneliner        = "format:%C(magenta)%h%Creset%C(blue)% ai%x08%x08%x08%x08%x08%x08%Creset%C(white)%<(25,trunc)% an%Creset%C(blue bold)%<(72,trunc)% s%Creset%C(yellow)%d%C(reset)"
+  log-with-messages   = "format:%>|(13)%Creset%C(magenta)%h%Creset%C(blue)% ai%x08%x08%x08%x08%x08%x08%Creset%C(white)%<(25,trunc)% an%Creset%C(green)%G?%Creset%C(blue bold)%<(72,trunc)% s%Creset%C(yellow)%d%C(reset)%w(0,59,59)%n%n%-b%n%-N"
+  log-with-subjects   = "format:%>|(13)%Creset%C(magenta)%h%Creset%C(blue)% ai%x08%x08%x08%x08%x08%x08%Creset%C(white)%<(25,trunc)% an%Creset%C(green)%G?%Creset%C(blue bold)%<(72,trunc)% s%Creset%C(yellow)%d"
+
+[alias]
+  lga                 = log --topo-order --irreversible-delete --graph     --pretty=log-with-messages --exclude=refs/local-pointers/* --exclude=refs/notes/*                                   --full-history --all
+  lgac                = log --topo-order --irreversible-delete --graph     --pretty=log-with-subjects --exclude=refs/local-pointers/* --exclude=refs/notes/*                                   --full-history --all
+  lgacnu              = log --topo-order --irreversible-delete --graph     --pretty=log-with-subjects --exclude=refs/local-pointers/* --exclude=refs/notes/* --exclude=refs/remotes/upstream/* --full-history --all
+  lganu               = log --topo-order --irreversible-delete --graph     --pretty=log-with-messages --exclude=refs/local-pointers/* --exclude=refs/notes/* --exclude=refs/remotes/upstream/* --full-history --all
+  lgc                 = log --topo-order --irreversible-delete --graph     --pretty=log-with-subjects --exclude=refs/local-pointers/* --exclude=refs/notes/*                                   --full-history
+  lgcb                = log --topo-order --irreversible-delete --graph     --pretty=log-with-messages --exclude=refs/local-pointers/* --exclude=refs/notes/*                                   --full-history
+
+# List contributors with number of commits
+contributors = shortlog --summary --numbered
+
+# Remove branches that have already been merged with master
+# a.k.a. 'delete merged'
+dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+wip = stash save --all --include-untracked 'WIP'
+fa  = fetch --all
+rh  = reset --hard
+shp = stash pop
+mm  = merge --quiet --no-edit --no-ff
+rbi = rebase -i
+mbm = merge-base main HEAD
+[pull]
+        rebase = true
+[rebase]
+        autoStash = true
+[merge]
+        ff = only
+[push]
+        default = current

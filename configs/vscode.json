@@ -21,6 +21,324 @@
   "git.openRepositoryInParentFolders": "always",
   "explorer.confirmDelete": false,
   "extensions.ignoreRecommendations": true,
-  "workbench.colorTheme": "Tokyo Night",
-  "window.titleBarStyle": "custom"
+  "window.titleBarStyle": "custom",
+
+  "editor.lineNumbers": "relative",
+  "find-it-faster.general.useTerminalInEditor": true,
+  "find-it-faster.findWithinFiles.fuzzRipgrepQuery": true,
+  "find-it-faster.general.useGitIgnoreExcludes": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "600",
+  "explorer.confirmDragAndDrop": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.quickSuggestionsDelay": 10,
+  "editor.suggest.localityBonus": true,
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.wordBasedSuggestions": "matchingDocuments",
+  "editor.parameterHints.enabled": true,
+  "terminal.integrated.inheritEnv": true,
+  "editor.largeFileOptimizations": false,
+  "workbench.colorCustomizations": {
+    "terminal.selectionBackground": "#317a2f67",
+    "statusBar.background": "#3C4841",
+    "statusBar.noFolderBackground": "#3C4841",
+    "statusBar.debuggingBackground": "#3C4841",
+    "statusBar.foreground": "#D3C6AA",
+    "statusBar.debuggingForeground": "#D3C6AA"
+  },
+  "git.ignoreLegacyWarning": true,
+  "terminal.integrated.defaultProfile.windows": "wsl.exe -d Moved-Ubuntu-20.04",
+  "jupyter.askForKernelRestart": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.env.linux": {
+    "PRE_NAMESPACE_PWD": "${cwd}"
+  },
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish",
+      "cwd": "/home/javier/inspirato/data-platform"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.colorTheme": "Everforest Dark",
+  "gitlens.views.remotes.branches.layout": "list",
+  "jupyter.interactiveWindow.textEditor.executeSelection": false,
+  "jupyter.interactiveWindow.cellMarker.codeRegex": "^(#\\s*COMMAND\\s*[-]*|#\\s*%%|#\\s*\\<codecell\\>|#\\s*In\\[\\d*?\\]|#\\s*In\\[ \\])",
+  "editor.inlineSuggest.enabled": true,
+  "gitlens.views.branches.branches.layout": "list",
+  "remote.autoForwardPortsSource": "hybrid",
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
+  "editor.formatOnSave": true,
+  "editor.minimap.size": "fit",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.integrated.gpuAcceleration": "auto",
+  "everforest.darkCursor": "yellow",
+  "everforest.darkContrast": "hard",
+  "background.fullscreen": {
+    "images": [
+      "https://github.com/basecamp/omakub/blob/master/themes/nord/background.png?raw=true",
+      "https://github.com/basecamp/omakub/blob/master/themes/everforest/background.jpg?raw=true",
+      "https://w.wallhaven.cc/full/ex/wallhaven-exl88k.png",
+      "https://w.wallhaven.cc/full/1p/wallhaven-1py5j1.jpg",
+      "https://w.wallhaven.cc/full/yx/wallhaven-yx65mg.png",
+      "https://w.wallhaven.cc/full/9d/wallhaven-9dvdzd.png",
+      "https://w.wallhaven.cc/full/gp/wallhaven-gp62wd.png",
+      "https://w.wallhaven.cc/full/d5/wallhaven-d5e3v3.jpg",
+      "https://w.wallhaven.cc/full/d6/wallhaven-d6j79o.png",
+      "https://whvn.cc/vq6v8l",
+      "https://w.wallhaven.cc/full/kx/wallhaven-kxqgdm.jpg",
+      "https://w.wallhaven.cc/full/vg/wallhaven-vgpo65.jpg",
+      "https://w.wallhaven.cc/full/5g/wallhaven-5g9qp5.jpg",
+      "https://w.wallhaven.cc/full/o5/wallhaven-o5rmll.jpg"
+    ],
+    "opacity": 0.93,
+    "size": "cover",
+    "position": "center",
+    "interval": 5400
+  },
+  "notebook.formatOnSave.enabled": true,
+  "notebook.find.filters": {
+    "markupSource": true,
+    "markupPreview": true,
+    "codeSource": true,
+    "codeOutput": true
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.stickyScroll.enabled": false,
+  "vim.leader": "<Space>",
+  "vim.autoindent": true,
+  "vim.useSystemClipboard": true,
+  "vim.camelCaseMotion.enable": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["leader", "o"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["£"],
+      "after": ["#"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
+    {
+      "key": "ctrl+d",
+      "command": "vim.remap",
+      "when": "inputFocus && vim.mode == 'Normal",
+      "args": {
+        "after": ["ctrl", "d", "zz"]
+      }
+    },
+    {
+      "key": "ctrl+u",
+      "command": "vim.remap",
+      "when": "inputFocus && vim.mode == 'Normal",
+      "args": {
+        "after": ["ctrl", "u", "zz"]
+      }
+    },
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "t"],
+      "commands": ["workbench.action.terminal.focus"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["<leader>", "p", "e"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "commands": ["vscode-harpoon.gotoEditor2"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "commands": ["vscode-harpoon.gotoEditor3"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "g", "t"],
+      "commands": ["aipopup.action.modal.generate"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-g>"],
+      "commands": ["aipopup.action.modal.generate"]
+    },
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#384B55"],
+  "vim.statusBarColors.insert": "#493B40",
+  "vim.statusBarColors.visual": "#3C4841",
+  "vim.statusBarColors.visualline": "#45443C",
+  "vim.statusBarColors.visualblock": "#414B50",
+  "vim.statusBarColors.replace": "#475258",
+  "vim.statusBarColors.commandlineinprogress": "#1E2326",
+  "vim.statusBarColors.searchinprogressmode": "#333C43",
+  "vim.statusBarColors.surroundinputmode": "#4F585E",
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-c": false
+  },
+  "find-it-faster.findFiles.previewCommand": "bat -f --theme=\"Kanagawa\" {}",
+  "find-it-faster.findFiles.previewWindowConfig": "top,50%",
+  "find-it-faster.general.batTheme": "Kanagawa",
+  "jupyter.interactiveWindow.cellMarker.default": "# COMMAND ----------",
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": true,
+  "python.analysis.extraPaths": [
+    "./src/libraries/business_core_src",
+    "./src/libraries/client_src",
+    "./src/libraries/common_src",
+    "./src/libraries/ingestion_src",
+    "./src/libraries/interfaces_src",
+    "./src/platform/table_registry_src",
+    "./src/platform/unity_catalog_src",
+    "./src/libraries/streaming_src",
+    "./src/platform/observability_src",
+    "./src/platform/uc_manager_src",
+    "./src/platform/databricks_tui_src",
+    "./src/projects/merchandising_proj/invited_ultra_premium_src",
+    "./src/projects/membership_proj/member_profile_src"
+  ],
+  "python.envFile": "${workspaceRoot}/.env",
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit",
+      "ruff.configuration": "./pyproject.toml"
+    }
+  },
+  "notebook.codeActionsOnSave": {
+    "notebook.source.organizeImports": "explicit",
+    "notebook.source.fixAll": "explicit"
+  },
+  "notebook.formatOnCellExecution": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "python.terminal.activateEnvironment": false,
+  "terminal.external.linuxExec": "fish",
+  "terminal.explorerKind": "external",
+  "find-it-faster.advanced.disableStartupChecks": true,
+  "find-it-faster.general.restoreFocusTerminal": true,
+  "find-it-faster.general.additionalSearchLocations": [
+    "/home/javier/inspirato/data-platform/src/libraries"
+  ],
+  "cursor.cpp.disabledLanguages": ["markdown", "scminput"],
+  "cursor.general.gitGraphIndexing": "enabled"
 }

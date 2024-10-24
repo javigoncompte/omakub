@@ -1,0 +1,6 @@
+# Fish shell
+
+set -x PATH ./bin $HOME/.local/bin $HOME/.local/share/omakub/bin $PATH
+set -h
+
+set -x OMAKUB_PATH /home/$USER/.local/share/omakub
